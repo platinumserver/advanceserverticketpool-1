@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <br><br>
+            <h2 style="font-family: 'Heebo', sans-serif;">Purchase <b>40</b> Golden coins</h2>
+            <br>
+            <a href="https://clicksgenie.com/default.aspx?u=1286928"><img src="https://clicksgenie.com/Images/b_ads/8.gif" alt="banner" /></a>
+            <br><br>
+            <div id="paypal-button"></div>
+            <br>
+            <br>
+            <a href="https://clicksgenie.com/default.aspx?u=1286928"><img src="https://clicksgenie.com/Images/b_ads/10.gif" alt="banner" /></a>
+          <br>
+<a href="https://clicksgenie.com/default.aspx?u=1286928"><img src="https://clicksgenie.com/Images/b_ads/8.gif" alt="banner" /></a>
+            <br>
+            <br>
+        </center>
+        
+
+        <!--PayPal checkout-->
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+        <script>
+            paypal.Button.render({
+                env: 'production',
+                client: {
+                    production: 'AXFUGK8WliiysFWqMsujpRSCu8BBEqcZ0i-nhSU30pT06gbh5wknsCFAoa2k4cROxglRniEu9-3ichdE'
+                },
+                locale: 'en_US',
+                style: {
+                size: 'medium',
+                color: 'black',
+                shape: 'pill',
+                },
+                commit: true,
+                payment: function(data, actions) {
+                    return actions.payment.create({
+                        transactions: [{
+                        amount: {
+                            total: '1.00',
+                            currency: 'PHP'
+                        }
+                        }]
+                    });
+                },
+                onAuthorize: function(data, actions) {
+                    return actions.payment.execute().then(function() {
+                        window.alert('Thank you for your purchase!');
+                        if (localStorage.getItem("tickets") == null) {
+                            balance = 40;
+                            localStorage.setItem("tickets", balance);
+                        }
+                        else {
+                            var lcl = localStorage.getItem("tickets");
+                            balance = JSON.parse(lcl) + 40;
+                            localStorage.setItem("tickets", balance);
+                        }
+                        var add_tickets = document.getElementById("ticket_num");
+                        add_tickets.innerHTML = balance;
+                    });
+                }
+            }, '#paypal-button');
+        </script>
+    </body>
+</html>
