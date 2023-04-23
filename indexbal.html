@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylebal.css"/>
+        <title>Hello, Partner!</title>
+    </head>
+ <body>
+  <div class="wrapper">
+    <div class="app-wrapper">
+
+      <!--Wallet-->
+      <aside class="wallet">
+        <h2>BALANCE HISTORY</h2>
+        <div class="modal-control">+</div>
+        <div class="cards"></div>
+      </aside>
+
+      <content class="transactions-wrapper">
+        <h2>
+          Current Balance
+          <span class="total-balance"></span>
+        </h2>
+        <div class="transactions"></div>
+      </content>
+
+    </div>
+
+  </div>
+  <div class="modal">
+    <div class="modal-body">
+      <h3>Add New Card</h3>
+      <div class="modal-close">+</div>
+      <div class="card-list">
+        <div class="card-image visa"></div>
+        <div class="card-image amex"></div>
+        <div class="card-image mc"></div>
+      </div>
+    </div>
+  </div>
+  <script src="scriptbal.js"></script>
+</body></html>
