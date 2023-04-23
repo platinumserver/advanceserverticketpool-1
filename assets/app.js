@@ -1,5 +1,4 @@
 const tl = gsap.timeline({defaults:{ease: 'power1.out'}});
-
 tl.to('.text', {y:"0%", duration: 1, stagger: 0.25});
 tl.to('.slider', {y:"-100%", duration: 1.5, delay: 0.5});
 tl.to('.intro', {y:"-100%", duration: 1}, "-=1");
@@ -8,314 +7,80 @@ tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.big-text-box', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
+tl.fromTo('.home-button3', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
+tl.fromTo('.home-button4', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
 var links = [ //128
-    'https://cb.run/4rQs',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/do-it-4-the-pizza?tsmac=store&tsmic=awsomets-3&pid=389&cid=100029',
-    'https://cb.run/9MGY',
-    'https://crlt.co/9tuQ',
-    'https://csgofly.com/r/gsp',
-    'https://cb.run/GhAN',
-    'https://teespring.com/it/stores/awsomets-3',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=389&cid=100019',
-    'https://crlt.co/9tuQ',
-    'https://cash-ads.com/?ref=3948',
-    'https://jpconstruction.altervista.org',
-    'https://cb.run/9KnF',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/nature-maniac?tsmac=store&tsmic=awsomets-3&pid=389&cid=100019',
-    'https://cb.run/EeX7',
-    'https://cb.run/hoj0',
-    'https://inorangepie.biz/12956821',
-    'https://crlt.co/9tuQ',
-    'https://clicksgenie.com/register.aspx?u=37232',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=879&cid=103789',
-    'https://crlt.co/9tuQ',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://r.honeygain.money/REIUT0A0',
-    'http://adsgamer.altervista.org',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/nature-maniac?tsmac=store&tsmic=awsomets-3&pid=793&cid=103543',
-    'https://2captcha.com?from=8848127',
-    'https://crlt.co/9tuQ',
-    'https://www.submithub.com/by/gsp',
-    'https://www.joingiveaways.com/miner.php?u=76561198869571841',
-    'https://surfe.be/ext/290563',
-    'https://crlt.co/9tuQ',
-    'https://cash-ads.com/?ref=3948',
-    'https://jpconstruction.altervista.org',
-    'https://cb.run/9KnF',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://crlt.co/9tuQ',
-    'https://freebitco.in/?r=23418056',
-    'https://crlt.co/9tuQ',
-    'https://radioearn.com/?ref=31176',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/worldwide-survivor?tsmac=store&tsmic=awsomets-3&pid=377&cid=100057',
-    'http://www.fiverr.com/s2/35d0de1b44',
-    'http://join-shortest.com/ref/6570218369?user-type=new',
-    'https://cb.run/8KuT',
-    'https://2captcha.com?from=8848127',
-    'https://crlt.co/9tuQ',
-    'https://www.submithub.com/by/gsp',
-    'https://www.joingiveaways.com/miner.php?u=76561198869571841',
-    'https://surfe.be/ext/290563',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://cash-ads.com/?ref=3948',
-    'https://crlt.co/9tuQ',
-    'https://www.rollbit.com/r/gsp',
-    'https://crlt.co/9tuQ',
-    'https://yllix.com/388948/',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/it/stores/a-magliett',
-    'https://crlt.co/9tuQ',
-    'https://crypto-loot.com/ref.php?go=27e53831e7e7e9403c8ccda236435ac0',
-    'https://crlt.co/9tuQ',
-    'https://www.instagram.com/giosaia',
-    'https://www.instagram.com/amagliett',
-    'https://www.instagram.com/soothinglooks',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/a-magliett?tsmac=store&tsmic=a-magliett&pid=793&cid=103538',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://cash-ads.com/?ref=3948',
-    'https://crlt.co/9tuQ',
-    'https://www.rollbit.com/r/gsp',
-    'https://crlt.co/9tuQ',
-    'https://yllix.com/388948/',
-    'https://crlt.co/9tuQ',
-    'https://www.instagram.com/robertodidio_1',
-    'https://app.stormgain.com/friend/BNS14280379',
-    'https://teespring.com/a-magliett?tsmac=store&tsmic=a-magliett&pid=793&cid=103538',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/nature-maniac?tsmac=store&tsmic=a-magliett&pid=389&cid=100019',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=378&cid=100077',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=793&cid=103539',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=389&cid=100029',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/mr-right-7808?tsmac=store&tsmic=a-magliett&pid=755&cid=103338',
-    'https://teespring.com/it/stores/giosaiasperillo',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=389&cid=100019',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=793&cid=103543',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
-    'https://teespring.com/record_2002?tsmac=store&tsmic=giosaiasperillo&pid=794&cid=103544',
-    'https://cb.run/mVtg',
-    'https://cb.run/ROnp',
-    'https://crlt.co/9tuQ',
-    'https://crlt.co/9tuQ',
+
+'https://v2.peddlr.io/?ref=-236718',
+'https://www.binance.com/en/fan-token/BWS/FCShakhtarFanverse/prediction?ref=396644725&registerChannel=fcshakhtar&match_id=a7ce9a24dec24abe98fe4b6e47a7ab4d&utm_source=fan-token', 
+'https://digital.dito.ph/promotion-rest-boot/4XpUj1w', 
+'https://www.binance.info/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_00ZU49VS4X',
+'https://invol.co/clhuqwb', 'https://www.maya.ph/app/registration?invite=PQ89ZZQLM98J',
+'https://adcash.myadcash.com/register?prmid=AKIVUBKUTT',
+    
+//socialmediasitespromotion
+
+  //grab
+  'https://cdnnd.com/srv.html?id=5529117&pub=2556420', 
+  //alibaba
+  'https://cdnnd.com/srv.html?id=5527801&pub=2556420', 
+  //McDonald's 
+  'https://cdndn.com/srv.html?id=5528655&pub=2556420', 
+  //uber
+  'https://cdnnd.com/srv.html?id=5529181&pub=2556420', 
+  //bigo 
+  'https://cdnnd.com/srv.html?id=5522324&pub=2556420', 
+  //bingo plus
+  'https://cdnnd.com/srv.html?id=5529069&pub=2556420', 
+  //gc mart
+  'https://gb.gc-mart.com/z/3CPPMy', 
+  //peddlr 
+  'https://v2.peddlr.io/?ref=-236718',
+  //binance 
+  'https://www.binance.com/en/fan-token/BWS/FCShakhtarFanverse/prediction?ref=396644725&registerChannel=fcshakhtar&match_id=a7ce9a24dec24abe98fe4b6e47a7ab4d&utm_source=fan-token', 
+'https://www.binance.info/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_00ZU49VS4X',
+  //dito telecom
+'https://digital.dito.ph/promotion-rest-boot/4XpUj1w', 
+  //involve asia
+  'https://invol.co/clhuqwb', 
+    //bybit-approved
+  'https://cdndn.com/srv.html?id=5528971&pub=2556420', 
+  //alibaba
+  'https://cdndn.com/srv.html?id=5527801&pub=2556420', 
+ 
+//other advertisement 
+ 'https://g.Cash-Ads.com/ptp/?code=kzVJrZxzTBTowh%2B60d%2F5hgf8dvlrXFuOjmzx%2BWZ2XE8%3D',  
+  'https://invol.co/clhuqwb', 
+'htpps://invite.ctnft.net/odjTVn',
+'https://app.stormgain.com/friend/BNS170698943', 
+  'https://Cash-Ads.com/?ref=LkfhZOx%2FsGjjMl96BJ517XwIRIHQCA6F9VLZpfpREyM%3D', 
+  'https://g.Cash-Ads.com/ptp/?code=4m9Vb0qEZ7r8UoCKJ2BKsfn6N39SC5z1WJszX2A8Luc%3D', 
+  'https://2captcha.com/for-customer/?from=17431836', 
+'https://2captcha.com/p/funcaptcha/?from=17431836', 
+'https://r.honeygain.me/ADSBO8137E',  
+'https://2captcha.com/?from=17431836', 
+'https://www.submithub.com/by/echozoneph', 
+'https://www.joingiveaways.com/miner.php?u=76561198869571841', 
+  'https://surfe.be/2369265', 
+  'https://surfe.be/ext/2369265',
+'https://freebitco.in/?r=51395402',
+
+  //bybit-approved
+  'https://cdndn.com/srv.html?id=5528971&pub=2556420', 
+  //alibaba
+  'https://cdndn.com/srv.html?id=5527801&pub=2556420', 
 ]
 
 var ads1 = [ //167
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<iframe src="https://get.cryptobrowser.site/pb/6/12956821/?t=simple,text,pro,mobile" style="width: 728px; height: 90px" frameborder="no"></iframe>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_c6lers.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_10.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_9.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_upk7x1.png" width="728" height="90" border="0" alt="Monetize your website traffic with yX Media" title="Monetize your website traffic with yX Media" /></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_8.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_5.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_vs2thi.png" width="728" height="90" border="0" alt="yX Media - Monetize your website traffic with us" title="yX Media - Monetize your website traffic with us" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_11.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_7.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_6.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_4.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_3.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
-    '<a href="https://es.btcnewz.com/auth/register?ref=c6332011cb628dcceb5b"><img src="https://es.btcnewz.com/banners/Leaderboard.gif" alt="ESFaucets" /></a>',
-    '<a href="https://surfe.be/ext/290563" target="_blank"><img src="https://static.surfe.be/images/banners/en/728x90_1.gif" alt="Surfe.be - Banner advertising service"></a>',
-    '<script type="text/javascript" src="https://uprimp.com/bnr.php?section=General&pub=388948&format=728x90&ga=g"></script><noscript><a href="https://yllix.com/publishers/388948" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/728x90.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>',
+    'code here', 
 ]
 
 var balance = 0;
 localStorage.getItem("tickets");
 if (localStorage.getItem("tickets") == null) {
-    balance = 0;
+    balance = balance + 10;
     localStorage.setItem("tickets", balance);
 }
 else {
@@ -346,14 +111,36 @@ function open_tickets() {
     random_num = Math.floor((Math.random() * 167) + 0);
     ad1 = ads1[random_num];
     ad2 = ads1[random_num + 1];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><br><h1>Extract Tickets</h1><br><button class="extract-button" onclick="extract_ticket()">Extract 1 Ticket</button><br><br><div><h2 id="result"></h2></div><div><b id="win-or-lose"></b></div><br><br><br><h1>Purchase Tickets</h1><br><div class="columns"><ul class="price"><li class="header">20 tickets</li><li class="grey">$0,10</li><li class="grey"><button class="button" onclick="purchase_tickets1()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">100 tickets</li><li class="grey">$0,50</li><li class="grey"><button class="button" onclick="purchase_tickets2()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 tickets</li><li class="grey">$1,00</li><li class="grey"><button class="button" onclick="purchase_tickets3()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 tickets</li><li class="grey">$5,00</li><li class="grey"><button class="button" onclick="purchase_tickets4()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 tickets</li><li class="grey">$10,00</li><li class="grey"><button class="button" onclick="purchase_tickets5()" style="cursor: pointer">Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 tickets</li><li class="grey">$50,00</li><li class="grey"><button class="button" onclick="purchase_tickets6()" style="cursor: pointer">Purchase</button></li></ul></div><br>' + ad2 + '<br><br></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">Golden coins</a></h1><div id="earn_balance">' + balance + '</div><br><br>' + ad1 + '<br><br><h1>WITHDRAW YOUR EARNINGS</h1><br><button class="extract-button" onclick="extract_ticket()">WITHDRAWAL: GC÷1.15=COST</button><br><br><div><h2 id="result"></h2></div><div><b id="win-or-lose"></b></div><br><br><br><h1>Purchase Golden coins</h1><br><div class="columns"><ul class="price"><li class="header">Goldencoins multiplier</li><li class="grey">₱250,00</li><li class="grey"><button class="button" onclick="purchase_tickets11()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">40 Golden coins</li><li class="grey">₱1,00</li><li class="grey"><button class="button" onclick="purchase_tickets1()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💎100 Golden coins</li><li class="grey">₱15,00</li><li class="grey"><button class="button" onclick="purchase_tickets2()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 Golden coins</li><li class="grey">₱30,00</li><li class="grey"><button class="button" onclick="purchase_tickets3()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">1.500 Golden coins</li><li class="grey">₱225,00</li><li class="grey"><button class="button" onclick="purchase_tickets4()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">3.500 Golden coins</li><li class="grey">₱527,00</li><li class="grey"><button class="button" onclick="purchase_tickets5()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">20.000 Golden coins</li><li class="grey">₱3012,00</li><li class="grey"><button class="button" onclick="purchase_tickets6()" style="cursor: pointer">PAYLAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💎ads slowdown for VIP</li><li class="grey">₱4500,00</li><li class="grey"><button class="button" onclick="purchase_tickets12()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💵TEAM LEADERs SUBSCRIPTION</li><li class="grey">₱8000,00</li><li class="grey"><button class="button" onclick="purchase_tickets13()" style="cursor: pointer">PAYPAL Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">NEGOSYO DEALS</li><li class="grey">₱0,00</li><li class="grey"><button class="button" onclick="purchase_tickets14()" style="cursor: pointer">EXCHANGE GOLDENCOINS</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💎🔥100 GOLDENCOINS</li><li class="grey">₱15,00</li><li class="grey"><button class="button" onclick="purchase_ticketsA()" style="cursor: pointer">PAYNAMICS PURCHASE</button></li></ul></div><div class="columns"><ul class="price"><li class="header">200 GOLDENCOINS</li><li class="grey">₱30,00</li><li class="grey"><button class="button" onclick="purchase_ticketsB()" style="cursor: pointer">PAYNAMICS Purchase</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💎🔥ads slowdown for VIP</li><li class="grey">₱4500,00</li><li class="grey"><button class="button" onclick="purchase_ticketsC()" style="cursor: pointer">PAYNAMICS PURCHASE</button></li></ul></div><div class="columns"><ul class="price"><li class="header">💵🔥TEAM LEADERs SUBSCRIPTION</li><li class="grey">₱8000,00</li><li class="grey"><button class="button" onclick="purchase_ticketsD()" style="cursor: pointer">PAYNAMICS PURCHASE</button></li></ul></div><br>' + ad2 + '<br><br></center>';
+}
+function open_freebox() {
+    remove_section();
+    var add = document.getElementById("add-section");
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="https://free-mystery.echozone.repl.co/" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
+  window.open(link);
+    open_freebox();
+}
+function open_freespin() {
+    remove_section();
+    var add = document.getElementById("add-section");
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="https://free-spin.echozone.repl.co/" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
+  window.open(link);
+    open_freespin();
+}
+function open_reward() {
+    remove_section();
+    var add = document.getElementById("add-section");
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="./indexbal.html" width="100%" height="900" style="background-color: #b46b59;"></iframe></center>';
+  window.open(link);
+    open_reward();
 }
 function open_about() {
     remove_section();
     remove_nav();
-    remove_footer();
     var add = document.getElementById("add-section");
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><br><br><iframe src="./README.md" width="850" height="500" style="background-color: #b46b59;"></iframe></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">GOLDEN COINS </a></h1><br><br><iframe src="./README.md" width="100%" height="900" style="background-color: #b46b59;"></iframe></center>';
+  window.open(link);
+    open_about();
 }
 function open_earn() {
     remove_section();
@@ -362,72 +149,110 @@ function open_earn() {
     random_num = Math.floor((Math.random() * 128) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">TicketPool</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj1jjqEw6eMuMsoGykrygkBgVarXYN0Pu&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="back_home()">Stop Earning</button></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly wait and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="760" height="415" src="https://www.youtube.com/embed/videoseries?list=PLYETUL7CctPfbXoEX5QM2ENP1NO5tXfBz&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85%;" onclick="back_home()">Stop Earning</button></center>';
     window.open(link);
     tickets();
 }
 
 function tickets() {
     var add = document.getElementById("earn_balance");
-    balance = balance + 2;
+    balance = balance + 0.0005;
     localStorage.setItem("tickets", balance);
     add.innerHTML = balance;
-    setTimeout(() => {tickets();}, 600000);
+    setTimeout(() => {tickets();}, 90500);
+}
+function purchase_tickets11() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_tickets11.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets1() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets1.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+    
+  window.open('purchase_tickets1.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets2() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets2.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+  window.open('purchase_tickets2.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets3() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets3.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+    window.open('purchase_tickets3.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets4() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets4.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+    window.open('purchase_tickets4.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets5() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets5.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+    window.open('purchase_tickets5.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
 function purchase_tickets6() {
     var left = (screen.width - 500) / 2;
     var top = (screen.height - 750) / 4;
-    window.open('./assets/purchase_tickets6.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+    window.open('purchase_tickets6.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
 }
-
+function purchase_tickets12() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_tickets12.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets13() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_tickets13.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_tickets14() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_tickets14.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_ticketsA() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_ticketsA.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_ticketsB() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_ticketsB.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_ticketsC() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_ticketsC.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
+function purchase_ticketsD() {
+    var left = (screen.width - 500) / 2;
+    var top = (screen.height - 750) / 4;
+    
+  window.open('purchase_ticketsD.html', 'PURCHASE TICKETS', 'width=500, height=750, top=' + top + ', left=' + left);
+}
 function extract_ticket() { //extract 1 ticket
-    var result = document.getElementById('result');
-    var win_or_lose = document.getElementById('win-or-lose');
+  var add = document.getElementById("add-section");
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="./withdrawal.html" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
     var tickets = document.getElementById("earn_balance");
     if (balance == 0) {
         result.innerHTML = 'You have no tickets.'
     }
     else {
-        balance = balance - 1;
+        balance = balance - 0.1;
         localStorage.setItem("tickets", balance);
         tickets.innerHTML = balance;
-        random_num = Math.floor((Math.random() * 100) + 0);
-        winning_num = Math.floor((Math.random() * 100) + 0);
-        if (random_num == winning_num) {
-            result.innerHTML = random_num;
-            win_or_lose.innerHTML = 'WIN';
-        }
-        else {
-            result.innerHTML = random_num;
-            win_or_lose.innerHTML = 'LOSE';
         }
     }
-}
 
 function back_home() {
     location.reload();
