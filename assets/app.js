@@ -13,6 +13,27 @@ tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
 var links = [ //128
 
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+'https://psaudous.com/4/5894396',
+
+
 'https://v2.peddlr.io/?ref=-236718',
 'https://www.binance.com/en/fan-token/BWS/FCShakhtarFanverse/prediction?ref=396644725&registerChannel=fcshakhtar&match_id=a7ce9a24dec24abe98fe4b6e47a7ab4d&utm_source=fan-token', 
 'https://digital.dito.ph/promotion-rest-boot/4XpUj1w', 
