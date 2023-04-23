@@ -5,19 +5,24 @@
 }
 main {
     font-family: 'Heebo', sans-serif;
+  
 }
 a {
-    color: black;
+     color: white;
     text-decoration: none;
+  font-size: 20px;  
+  font-family: 'Heebo', sans-serif;
+  
 }
 .landing {
     min-height: 100vh;
-    background: url(./images/tickets1.png);
+    background: url(https://dreamstarteleradio.com/sound-movment-3.gif);
     background-size: cover;
     padding: 3rem 5rem;
-    color: black;
+    color: white;
 }
 nav {
+  color:  white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,11 +30,13 @@ nav {
 }
 .nav-links {
     display: flex;
-    list-style: none;    
+    list-style: none;   
+  color: ￼￼white; 
 }
 .nav-links li {
-    padding-left: 10rem;
-    font-size: 1.2rem;  
+    padding-left: 0.9rem;
+    font-size: 2rem;
+  border: 1.5px solid white;
 }
 .nav-links div {      
     cursor: pointer;
@@ -38,26 +45,40 @@ nav {
     font-family: 'Lobster', cursive;
     font-weight: lighter;
     font-size: 2rem;
+  color: ￼￼white;
 }
 .big-text {
-    font-family: 'Lobster', cursive;
+    font-family: 'Heebo', sans-serif;
+  cursive;
     position: absolute;
-    top: 42%;
+    top: 33.5%;
     left: 50%;
     transform: translate(-50%, -42%);
     font-weight: lighter;
-    font-size: 6rem;
-    color: black;
+    font-size: 2rem;
+    color: white;
 }
-.big-text-box {
-    background-color: transparent;
-    border: 10px solid black;
+.big-text2 {
+    font-family: 'Heebo', sans-serif;
+  cursive;
     position: absolute;
-    top: 42%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -42%);
-    width: 40rem;
-    height: 10rem;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: 
+white;
+}
+.big-text-box {
+    background-color: transparent-white;
+    border: 5px solid yellow;
+    position: absolute;
+    top: 33.5%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    width: 38rem;
+    height: 19rem;
 }
 .big-text-box-layer {
     opacity: 0.77;
@@ -96,7 +117,7 @@ nav {
     display: inline-block;
 }
 .home-button {
-    background-color:#d37b66;
+    background-color:#0000ff;
     color: white;
     padding: 10px 21px;
     text-align: center;
@@ -105,31 +126,65 @@ nav {
     font-size: 25px;
     font-family: 'Heebo', sans-serif;
     position: absolute;
-    top: 75%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
     cursor: pointer;
 }
-.home-button2 {
-    background-color:#d37b66;
+.home-button3 {
+    background-color:#0000ff;
     color: white;
     padding: 10px 21px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Heebo', sans-serif;
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -20%);
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -30%);
     border-radius: 30px;
     border: 2px solid #612a1d;
     cursor: pointer;
 }
-footer {
+.home-button4 {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -30%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.home-button2 {
+    background-color:#0000ff;
+    color: white;
+    padding: 10px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -24%);
+    border-radius: 30px;
+    border: 2px solid #612a1d;
+    cursor: pointer;
+}
+.footer {
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     position: absolute;
@@ -150,10 +205,11 @@ footer {
     z-index: -1;
     transform: translate(-50%, -50.5%);
     width: 60rem;
-    height: 2.5rem;
+    height: 5rem;
 }
 #earn_balance {
     font-family: 'Heebo', sans-serif;
+  font-size: 30px;
 }
 .back-button {
     background-color:#d37b66;
@@ -162,7 +218,7 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 40px;
     font-family: 'Heebo', sans-serif;
     position: absolute;
     top: 15%;
