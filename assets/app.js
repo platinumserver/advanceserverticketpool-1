@@ -32,8 +32,6 @@ var links = [ //128
 'https://psaudous.com/4/5894396',
 
 'https://psaudous.com/4/5894396',
-
-
 'https://v2.peddlr.io/?ref=-236718',
 'https://www.binance.com/en/fan-token/BWS/FCShakhtarFanverse/prediction?ref=396644725&registerChannel=fcshakhtar&match_id=a7ce9a24dec24abe98fe4b6e47a7ab4d&utm_source=fan-token', 
 'https://digital.dito.ph/promotion-rest-boot/4XpUj1w', 
@@ -138,16 +136,32 @@ function open_freebox() {
     remove_section();
     var add = document.getElementById("add-section");
     add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="https://free-mystery.echozone.repl.co/" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
-  window.open(link);
-    open_freebox();
+        var tickets = document.getElementById("earn_balance");
+    if (balance == 0) {
+        result.innerHTML = 'You have no tickets.'
+    }
+    else {
+        balance = balance - 0.1;
+        localStorage.setItem("tickets", balance);
+        tickets.innerHTML = balance;
+        }
 }
+
 function open_freespin() {
     remove_section();
     var add = document.getElementById("add-section");
     add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="https://free-spin.echozone.repl.co/" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
-  window.open(link);
-    open_freespin();
+        var tickets = document.getElementById("earn_balance");
+    if (balance == 0) {
+        result.innerHTML = 'You have no tickets.'
+    }
+    else {
+        balance = balance - 0.1;
+        localStorage.setItem("tickets", balance);
+        tickets.innerHTML = balance;
+        }
 }
+
 function open_reward() {
     remove_section();
     var add = document.getElementById("add-section");
