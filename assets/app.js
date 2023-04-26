@@ -302,7 +302,7 @@ function open_chatbox() {
 
     ad1 = ads1[random_num];
 
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your, create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="950" style="background-color: white;" src="https://timeclack-ph.netlify.app/login&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85% ;" onclick="back_home()">Stop Earning</button></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your, create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="950" style="background-color: white;" src="https://timeclack-ph.netlify.app"&index=' + random_num + '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 85% ;" onclick="back_home()">Stop Earning</button></center>';
 
     window.open(link);
 
