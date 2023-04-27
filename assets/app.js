@@ -277,7 +277,7 @@ function purchase_ticketsD() {
 }
 function extract_ticket() { //extract 1 ticket
   var add = document.getElementById("add-section");
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="./withdrawal.html" width="100%" height="100%" style="background-color: #b46b59;"></iframe></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href=". /index.html">GOLDEN COINS </a></h1><br><br><iframe src="./withdrawal.html" width="100%" height="90%" style="background-color: #b46b59;"></iframe></center>';
     var tickets = document.getElementById("earn_balance");
     if (balance == 0) {
         result.innerHTML = 'You have no tickets.'
