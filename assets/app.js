@@ -128,7 +128,7 @@ var links = [ //128
 ]
 
 var ads1 = [ //167
-    'code here', 
+    '<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',6008126,document.body||document.documentElement)</script>', 
 ]
 
 var balance = 0;
