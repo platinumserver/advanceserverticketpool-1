@@ -13,6 +13,15 @@ tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
 var links = [ //128
 
+ 'https://psuftoum.com/4/6013744',
+
+'https://psuftoum.com/4/6013744',
+
+'https://psuftoum.com/4/6013744',
+
+'https://psuftoum.com/4/6013744',
+
+'https://psuftoum.com/4/6013744', 
  'https://psaudous.com/4/5894396',
 
  'https://psaudous.com/4/5894396',
