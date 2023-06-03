@@ -251,7 +251,7 @@ function tickets() {
     balance = balance + 0.1;
     localStorage.setItem("tickets", balance);
     add.innerHTML = balance;
-    setTimeout(() => {tickets();}, 25000);
+    setTimeout(() => {tickets();}, 19999);
 }
 function purchase_tickets11() {
     var left = (screen.width - 500) / 2;
