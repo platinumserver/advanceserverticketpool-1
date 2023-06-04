@@ -8,27 +8,35 @@ Echozone  was created using [specialcodes)
 The software was created as an alternative to the lottery so users don't have to actually pay any money for lottery coins.
 The user earns coins by viewing ads, sponsored links and watching sponsored YouTube videos.
 
-🔹Every  500 Goldencoins🧽, 
-get ₱10 regular e-load to all network .
-🔹Every  1000 Goldencoins🧽,
-get (free random item's : 
-reward#1  (1-3 honestglow beauty products) 
-reward#2  (1-3 jarra's or lara's spread) 
-reward#3  (snack foods from clover party pack) 
-🔹Every 1500 Goldencoins🧽, 
-get ₱225.00 cash prize direct to gcash via BCH
-🔹Every 2500 Goldencoins🧽, 
-get ₱375.00 cash prize direct to gcash via BCH
-🔹Every 3500 Goldencoins🧽,
-get ₱525.00 cash prize direct to gcash via BCH
-🔹Every 4500 Goldencoins🧽, 
-get ₱675.00 cash prize direct to gcash via BCH
-🔹Every 5500 Goldencoins🧽, 
-get ₱825.00 cash prize direct to gcash via BCH
-🔹Every 6500 Goldencoins🧽, 
-get ₱975.00 cash prize direct to gcash via BCH
-🔹Every 7500 Goldencoins🧽, 
-get ₱1125.00 cash prize direct to gcash via BCH
+Join ECHOZONE as a AFFILIATE and unlock the potential to expand your EARNINGS  with AUTOMATED & DIGITAL MONEY MAKING MACHINE . Experience the rewards of being an authorized AFFILIATE in your area, including income opportunities and exclusive benefits!
+
+Be our Partner !
+
+GET EARNED IN JUST A SECONDS WITH ECHOZONE 7EASY STEPS
+
+
+
+1. Create affiliate account
+
+2. Fund your account
+
+3. Buy or choose your server, choose between  FREE SERVER, NORMAL SERVER, and ADVANCE SERVER
+
+4. View ads or radio streaming 24/7.
+
+5. Earn goldencoins per ads click or per 20 seconds radio streaming
+
+6. Declare goldencoins @gdf form every 14th & 29th of the month
+
+7. After declaration, withdraw your earnings from affiliate balance every 15th & 30th or end of the month)
+
+
+
+THATS ALL. KEEP US ON EARNING. 
+
+
+
+
 
 ## Disclaimer!
 
