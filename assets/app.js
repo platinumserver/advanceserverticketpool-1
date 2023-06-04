@@ -83,37 +83,34 @@ var links = [ //128
 'https://invol.co/clhuqwb', 'https://www.maya.ph/app/registration?invite=PQ89ZZQLM98J',
 'https://adcash.myadcash.com/register?prmid=AKIVUBKUTT',
     
-//socialmediasitespromotion
 
-  //grab
+
+  
   'https://cdnnd.com/srv.html?id=5529117&pub=2556420', 
-  //alibaba
   'https://cdnnd.com/srv.html?id=5527801&pub=2556420', 
-  //McDonald's 
+   
   'https://cdndn.com/srv.html?id=5528655&pub=2556420', 
-  //uber
-  'https://cdnnd.com/srv.html?id=5529181&pub=2556420', 
-  //bigo 
+ 
   'https://cdnnd.com/srv.html?id=5522324&pub=2556420', 
-  //bingo plus
+ 
   'https://cdnnd.com/srv.html?id=5529069&pub=2556420', 
-  //gc mart
+  
   'https://gb.gc-mart.com/z/3CPPMy', 
-  //peddlr 
+  
   'https://v2.peddlr.io/?ref=-236718',
-  //binance 
+  
   'https://www.binance.com/en/fan-token/BWS/FCShakhtarFanverse/prediction?ref=396644725&registerChannel=fcshakhtar&match_id=a7ce9a24dec24abe98fe4b6e47a7ab4d&utm_source=fan-token', 
 'https://www.binance.info/en/activity/referral-entry/CPA?fromActivityPage=true&ref=CPA_00ZU49VS4X',
-  //dito telecom
+  
 'https://digital.dito.ph/promotion-rest-boot/4XpUj1w', 
-  //involve asia
+  
   'https://invol.co/clhuqwb', 
-    //bybit-approved
+    
   'https://cdndn.com/srv.html?id=5528971&pub=2556420', 
-  //alibaba
+  
   'https://cdndn.com/srv.html?id=5527801&pub=2556420', 
  
-//other advertisement 
+
  'https://g.Cash-Ads.com/ptp/?code=kzVJrZxzTBTowh%2B60d%2F5hgf8dvlrXFuOjmzx%2BWZ2XE8%3D',  
   'https://invol.co/clhuqwb', 
 'htpps://invite.ctnft.net/odjTVn',
@@ -130,9 +127,9 @@ var links = [ //128
   'https://surfe.be/ext/2369265',
 'https://freebitco.in/?r=51395402',
 
-  //bybit-approved
+  
   'https://cdndn.com/srv.html?id=5528971&pub=2556420', 
-  //alibaba
+  
   'https://cdndn.com/srv.html?id=5527801&pub=2556420', 
 ]
 
