@@ -134,7 +134,7 @@ var links = [ //128
 ]
 
 var ads1 = [ //167
-    'code', 
+    '<img src="http://i.upld.uk/A3Ehp.jpg" alt="A3Ehp" />', 
 ]
 
 var balance = 0;
