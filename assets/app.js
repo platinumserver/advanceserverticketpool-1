@@ -233,7 +233,7 @@ function open_about() {
 }
 function open_earn() {
     remove_section();
-    remove_nav();
+    
     var add = document.getElementById("add-section");
     random_num = Math.floor((Math.random() * 128) + 0);
     link = links[random_num];
