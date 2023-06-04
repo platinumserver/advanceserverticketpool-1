@@ -168,7 +168,7 @@ function remove_footer() {
 
 function open_tickets() {
     remove_section();
-    remove_nav();
+
     remove_footer();
     var add = document.getElementById("add-section");
     random_num = Math.floor((Math.random() * 167) + 0);
