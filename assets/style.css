@@ -17,8 +17,8 @@ a {
 .landing {
     min-height: 100vh;
     background: url(https://media4.giphy.com/media/XJ5hE5pLDdZrkX1oY5/giphy.gif);
-    background-size: 100%;
-
+    background-size: cover;
+padding: -1rem;
     color: white;
 }
 nav {
