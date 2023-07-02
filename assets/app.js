@@ -6,7 +6,7 @@ tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
 tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.big-text-box', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
-tl.fromTo('.home-button2', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
+tl.fromTo('.home-button', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button3', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('.home-button4', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
