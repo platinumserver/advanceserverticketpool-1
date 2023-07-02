@@ -375,8 +375,8 @@ function open_chatbox2() {
   random_num = Math.floor((Math.random() * 128) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your message, create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="690" style="background-color: white;" src="https://timeclack-ph.netlify.app/home&index=' + random_num +
-'&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br><iframe src="https://my.cbox.ws/HIGHLIGHTSRADIO" allow="microphone; camera; fullscreen; autoplay; display-capture" style="width: 560; height: 690; overflow: hidden; border: 0px none; background-color: transparent;"></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 1% ;" onclick="back_home()">Stop Earning</button></center>';
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your message, create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="560" height="685" style="background-color: white;" src="https://timeclack-ph.netlify.app/home&index=' + random_num +
+'&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br><iframe src="https://my.cbox.ws/HIGHLIGHTSRADIO" allow="microphone; camera; fullscreen; autoplay; display-capture" style="width: 560; height: 600; overflow: hidden; border: 0px none; background-color: transparent;"></iframe><br><br>' + ad1 + '<button class="home-button" style="top: 1% ;" onclick="back_home()">Stop Earning</button></center>';
   if (balance == 0) {
 add.innerHTML = 'You have no tickets, purchase or refill atleast 200 goldencoins to access this feature.'
   }
