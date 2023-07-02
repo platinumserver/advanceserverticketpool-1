@@ -246,10 +246,10 @@ function open_earn() {
 
 function tickets() {
     var add = document.getElementById("earn_balance");
-    balance = balance + 1.5;
+    balance = balance + 10;
     localStorage.setItem("tickets", balance);
     add.innerHTML = balance;
-    setTimeout(() => {tickets();}, 19999);
+    setTimeout(() => {tickets();}, 21000);
 }
 function purchase_tickets11() {
     var left = (screen.width - 500) / 2;
