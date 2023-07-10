@@ -285,7 +285,7 @@ white;
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 .price .header {
-    background-color: #111;
+    background-color: green;
     color: white;
     font-size: 25px;
 }
@@ -295,7 +295,7 @@ white;
     text-align: center;
 }
 .price .grey {
-    background-color: black;
+    background-color: white;
     font-size: 25px;
 }
 .button {
